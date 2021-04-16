@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./dist/css/style.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="stylesheet" href="../common/lib/lightcountdown_v1_2/lightcountdown.css">
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/png">
+    <title>Document</title>
+</head>
+<body>
+
+<section class="main">
+
+    <div class="main-container">
+        <div class="main-container-header">
+
+            <div class="main-container-header-contact">
+                <div class="main-container-header-contact-item">
+                    <img class="main-container-header-contact-item-icon" src="./assets/img/mts.png" alt="mts">
+                    <p class="main-container-header-contact-item-number">
+                        +375 (00) 000-00-00
+                    </p>
+                </div>
+                <div class="main-container-header-contact-item">
+                    <img class="main-container-header-contact-item-icon" src="./assets/img/A1.png" alt="A1">
+                    <p class="main-container-header-contact-item-number">
+                        +375 (00) 000-00-00
+                    </p>
+                </div>
+            </div>
+
+            <div class="main-container-header-menu">
+                <a class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                   data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                   aria-expanded="false">
+                    <span class="navbar-toggler_item"></span>
+                </a>
+                <nav class="nav">
+                    <a class="nav-link" href="#price">Цены</a>
+                    <a class="nav-link" href="#games">Список игр</a>
+                    <a class="nav-link" href="#connect">Оформить заявку</a>
+                </nav>
+            </div>
+
+            <div class="main-container-header-logo">
+                <img src="./assets/img/logo.png" alt="logo">
+            </div>
+
+            <div class="main-container-header-content">
+                <h1 class="main-container-header-content-title">
+                    новая игровая реальность
+                </h1>
+                <p class="main-container-header-content-subtitle">
+                    vr шлемы с доставкой на дом
+                </p>
+                <button class="main-container-header-content-btn" data-toggle="modal" data-target="#modal-order">
+                    Забронировать
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="collapse" id="navbarToggleExternalContent">
+        <nav class="nav-mobile position-absolute top-0 text-center w-100" style="z-index:100;">
+            <a class="nav-link" href="#price">Цены</a>
+            <a class="nav-link" href="#games">Список игр</a>
+            <a class="nav-link" href="#connect">Оформить заявку</a>
+        </nav>
+    </div>
+
+    <div class="main-border">
+        <div class="main-border-container">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none" class="divider--pointed" role="img" aria-hidden="true">
+                <path d="M737.9,94.7L0,0v100h1000V0L737.9,94.7z"></path>
+            </svg>
+        </div>
+    </div>
+</section>
+
+<section id="price" class="price">
+
+    <div class="price-container">
+        <h2 class="price-container-title">
+            Цены
+        </h2>
+
+        <div class="price-container-cards">
+            <div class="price-container-cards-first">
+                <div class="card-content">
+                    <h5 class="card-title">Будние дни</h5>
+                    <p class="card-text">понедельник-четверг</p>
+                    <p class="card-price">100 руб.</p>
+                    <button class="price-btn" data-toggle="modal" data-target="#modal-order">
+                        Забронировать
+                    </button>
+                </div>
+            </div>
+
+            <div class="price-container-cards-second">
+                <div class="card-content">
+                    <h5 class="card-title">Выходной день и праздничные дни</h5>
+                    <p class="card-text">пятница-воскресенье</p>
+                    <p class="card-price">150 руб.</p>
+                    <button class="price-btn" data-toggle="modal" data-target="#modal-order">
+                        Забронировать
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="price-border">
+        <div class="price-border-container">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none" class="divider--pointed" role="img" aria-hidden="true">
+                <path d="M737.9,94.7L0,0v100h1000V0L737.9,94.7z"></path>
+            </svg>
+        </div>
+    </div>
+</section>
+
+<section id="games" class="games">
+    <div class="games-container">
+        <div class="games-container-info">
+            <p class="games-container-info-text">
+                Проект VR AGE выводит самое современное игровое развлечение на мобильный уровень. вы можете арендовать оборудование или пригласить нас для организации игр на выезде.
+            </p>
+            <p class="games-container-info-text">
+                VR добавляет красок: Можно провести необычный вечер с семьей, коллегами или друзьями, сгладить переходы в расписании крупных мероприятий или же просто порадовать себя на выходных. Насладитесь полным погружением в виртуальную реальность и попробуйте лучшие игры, не выходя из дома.
+            </p>
+        </div>
+        <div class="games-container-content">
+            <h2 class="games-container-content-title">
+                комплект игр
+            </h2>
+            <p class="games-container-content-subtitle">
+                одиночные и командные игры
+            </p>
+        </div>
+    </div>
+    <div class="games-slider">
+        <div class="slick-slider">
+            <div class="slick-slide slide1">
+                <div class="slider-container">
+                    <div class="subtitle">
+                        Эпичная дуэль в слоу-мо
+                    </div>
+                    <div class="title">
+                        Blaston
+                    </div>
+                    <div class="text">
+                        Blaston — неоновый симулятор дуэли. Игроки сталкиваются друг с другом в напряженных поединках, которые заставляют оставаться в постоянном движении и атаковать своих противников с невероятной точностью, используя ассортимент высокотехнологичного и футуристического оружия.
+                    </div>
+                </div>
+
+            </div>
+            <div class="slick-slide slide2">
+                <div class="slider-container">
+                    <div class="subtitle">
+                        кто на новенького?
+                    </div>
+                    <div class="title">
+                        Arizona sunshine
+                    </div>
+                    <div class="text">
+                        Классический зомби-шутер, в котором игрокам (до 4х человек) предстоит бороться за свою жизнь, отражая волны оживших мертвецов. Продуманный геймплей и максимальное погружение обеспечены.
+                    </div>
+                </div>
+
+            </div>
+            <div class="slick-slide slide3">
+                <div class="slider-container">
+                    <div class="subtitle">
+                        Поклонники доты ликуют
+                    </div>
+                    <div class="title">
+                        Dead Shot Heroes
+                    </div>
+                    <div class="text">
+                        Игра в стиле FPS MOBA, разработанная для VR. Две команды пытаются прорваться сквозь линии врага и уничтожить базу противника. Ваша задача - помочь своей.
+                    </div>
+                </div>
+
+            </div>
+            <div class="slick-slide slide4">
+                <div class="slider-container">
+                    <div class="subtitle">
+                        Игра, покорившая мир
+                    </div>
+                    <div class="title">
+                        Beat Saber
+                    </div>
+                    <div class="text">
+                        Акрада, в которой игроки с помощью двух клинков "сражаются" с кубами, летящими на них в такт музыке. Цель - набрать максимально возможное количество очков, не сбиваясь во время ударов, и не "убивая" кубы клинками неправильного цвета.
+                    </div>
+                </div>
+
+            </div>
+            <div class="slick-slide slide5">
+                <div class="slider-container">
+                    <div class="subtitle">
+                        Самый необычный шутер
+                    </div>
+                    <div class="title">
+                        SUPER HOT VR
+                    </div>
+                    <div class="text">
+                        SUPERHOT VR стирает границы между вдумчивой стратегией и безудержным безумием: это VR-шутер, где время движется только вместе с тобой. Здесь не будет восполняемой полоски здоровья. Не будет удачно разбросанных боеприпасов. Только ты — один против всех, с голыми руками. Выхватывай оружие у падающих врагов, стреляй, руби и уворачивайся от пуль, как Нео.
+                    </div>
+                </div>
+
+            </div>
+            <div class="slick-slide slide6">
+                <div class="slider-container">
+                    <div class="subtitle">
+                        инопланетный квест
+                    </div>
+                    <div class="title">
+                        Richie's Plank Experience
+                    </div>
+                    <div class="text">
+                        приключенческая игра-головоломка с отличной графикой. Возьмите на себя роль агента Эпсилона, астронавта Атлантического союза, отправленного на заброшенную волгравскую базу на Рею, одну из спутников Сатурна. Ваша миссия: исследовать секретный исследовательский проект.
+                    </div>
+                </div>
+            </div>
+            <div class="slick-slide slide7">
+                <div class="slider-container">
+                    <div class="subtitle">
+                        инопланетный квест
+                    </div>
+                    <div class="title">
+                        Red Matter
+                    </div>
+                    <div class="text">
+                        приключенческая игра-головоломка с отличной графикой. Возьмите на себя роль агента Эпсилона, астронавта Атлантического союза, отправленного на заброшенную волгравскую базу на Рею, одну из спутников Сатурна. Ваша миссия: исследовать секретный исследовательский проект.
+                    </div>
+                </div>
+            </div>
+            <div class="slick-slide slide8">
+                <div class="slider-container">
+                    <div class="subtitle">
+                        бесконечный экшн
+                    </div>
+                    <div class="title">
+                        Robo Recall
+                    </div>
+                    <div class="text">
+                        В один прекрасный день партия роботов из мегаполиса будущего выходит из под контроля и начинает крушить всё по чем зря. Ваша задача - "отозвать" неисправные модели при помощи пистолетов, дробовиков, лазерных пушек и всего, что попадется под руку. Очень динамичная игра с потрясающей интерактивностью.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="connect" class="connect">
+    <div class="connect-container">
+        <h2 class="connect-container-title">
+            Оформить заявку
+        </h2>
+        <div class="connect-container-content">
+            <form class="rent-form">
+                <div class="rent-form-parts">
+                    <div class="left-part">
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control" placeholder="Введите Ваше имя">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" class="form-control" placeholder="Ведите Ваш номер телефона"
+                                   required>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Выберете вариант доставки:</label>
+                            <select class="form-control delivery-select" id="exampleFormControlSelect1" name="choose">
+                                <option value="deliv_pickup">Самовывоз</option>
+                                <option value="delivery">Доставка</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="right-part">
+                        <p class="rent">
+                            Дата аренды:
+                        </p>
+
+                        <div class="rent-date">
+                            <div class="form-group">
+                                <label for="start" class="start">
+                                    c
+                                </label>
+                                <input type="date" id="start" class="form-control" name="data-start">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="finish">
+                                    по
+                                </label>
+                                <input type="date" id="finish" class="form-control" name="data-finish">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Комментарий:</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="comments">
+                            </textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rent-form-btn">
+                    <button type="submit" class="btn form-button">Забронировать</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <section class="footer">
+        <div class="footer-container">
+            <div class="footer-container-menu">
+                <nav class="nav">
+                    <a class="nav-link" href="#price">Цены</a>
+                    <a class="nav-link" href="#games">Список игр</a>
+                    <a class="nav-link" href="#connect">Оформить заявку</a>
+                </nav>
+            </div>
+
+            <div class="footer-container-contact">
+                <div class="footer-container-contact-item">
+                    <img class="footer-container-contact-item-icon" src="./assets/img/mts.png" alt="mts">
+                    <p class="footer-container-contact-item-number">
+                        +375 (00) 000-00-00
+                    </p>
+                </div>
+                <div class="footer-container-contact-item">
+                    <img class="footer-container-contact-item-icon" src="./assets/img/A1.png" alt="A1">
+                    <p class="footer-container-contact-item-number">
+                        +375 (00) 000-00-00
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</footer>
+
+<div class="modal fade" id="modal-order">
+    <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <p class="h2 modal-title">Оставьте заявку <br/><span class="modal-subtitle">и мы свяжемся с Вами в ближайшее время</span>
+                </p>
+                <hr>
+                <form>
+                    <div class="form-group">
+                        <input type="text" name="name" class="form-control" placeholder="Введите Ваше имя">
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="phone" class="form-control" placeholder="Ведите Ваш номер телефона"
+                               required>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-form btn-lg btn-block app-ff&#45;&#45;alt">Отправить
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="../common/lib/lightcountdown_v1_2/lightcountdown.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="dist/js/main.min.js"></script>
+</body>
+</html>

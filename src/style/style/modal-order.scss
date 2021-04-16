@@ -1,0 +1,13 @@
+.btn-form {
+  background: #c40a0a;
+  color: white;
+
+  &:hover {
+    border: 2px dotted;
+  }
+}
+.modal-subtitle {
+  @media (max-width: 450px) {
+    font-size: 23px;
+  }
+}

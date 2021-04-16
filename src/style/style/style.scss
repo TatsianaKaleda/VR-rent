@@ -1,0 +1,12 @@
+@import "node_modules/reset-css/sass/reset.scss";
+@import "main.scss";
+@import "price.scss";
+@import "games.scss";
+@import "connect.scss";
+@import "footer.scss";
+@import "modal-order.scss";
+
+body {
+  overflow-x: hidden;
+  margin-bottom: 150px;
+}

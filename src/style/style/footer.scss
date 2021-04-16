@@ -1,0 +1,114 @@
+.footer {
+  background: #152131;
+
+  &-container {
+    margin: 0 auto;
+    padding: 10px 20px 10px;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 930px) {
+      flex-direction: column;
+    }
+
+    &-menu {
+      & .nav {
+        justify-content: center;
+        padding: 17px 0;
+
+        & .nav-link {
+          padding: 0 17px;
+          font-family: 'Montserrat', sans-serif;
+          font-size: 17px;
+          text-transform: uppercase;
+          color: #ffffff;
+          border-right: 2px solid white;
+
+          &:hover {
+            color: #858282;
+          }
+
+          &:last-child {
+            @media (max-width: 930px) {
+              border-right: none;
+            }
+          }
+
+          @media (max-width: 479px) {
+            font-size: 15px;
+          }
+
+          @media (max-width: 444px) {
+            font-size: 12px;
+          }
+
+          @media (max-width: 444px) {
+            padding: 0 10px;
+          }
+
+          @media (max-width: 343px) {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+
+    &-contact {
+      display: flex;
+      justify-content: flex-end;
+      padding: 17px 0;
+
+      &-item {
+        display: flex;
+        justify-content: space-between;
+
+        &:first-child {
+          margin-right: 15px;
+          padding-right: 15px;
+          border-right: 2px solid white;
+
+          @media (max-width: 590px) {
+            margin-right: 0px;
+          }
+
+          @media (max-width: 435px) {
+            border-right: none;
+            padding-right: 0;
+          }
+        }
+
+        &-icon {
+          margin-right: 10px;
+          width: 25px;
+          height: 25px;
+        }
+
+        &-number {
+          margin-bottom: 0;
+          padding: 3px 0;
+          font-family: 'Montserrat', sans-serif;
+          font-size: 16px;
+          color: #ffffff;
+
+          @media (max-width: 479px) {
+            font-size: 15px;
+          }
+        }
+
+        @media (max-width: 435px) {
+          justify-content: center;
+          margin-bottom: 10px;
+        }
+      }
+
+      @media (max-width: 930px) {
+        justify-content: center;
+      }
+
+      @media (max-width: 435px) {
+        display: block;
+        text-align: center;
+      }
+    }
+  }
+}
